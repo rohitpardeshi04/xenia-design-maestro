@@ -61,7 +61,8 @@ footer i {
   font-weight: bolder !important;
 }
 .alb::-webkit-scrollbar,
-.music-cont::-webkit-scrollbar {
+.music-cont::-webkit-scrollbar,
+.cartoon-cont::-webkit-scrollbar {
   display: none !important;
 }
 .alb {
@@ -216,10 +217,26 @@ footer i {
   color: white;
 }
 
-.games .card:hover {
-  cursor: pointer;
-  box-shadow: 0px 12px 30px 0px rgba(1, 1, 1, 0.2);
-  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+.cartoon-cont {
+  max-height: 65vh;
+  overflow-y: auto;
+}
+
+.cartoon-cont .card {
+  /* background-color: ; */
+  padding: 15px;
+}
+
+.cartoon-thumb {
+  width: 70%;
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid red;
+}
+
+.cart {
+  width: 100%;
+  border: 1px solid red;
 }
 
 @media only screen and (max-width: 900px) {
