@@ -73,7 +73,7 @@
                     <div class="row">
                         <button id="slideLeft" type="button" class="mx-3 desktop-only">
                             < </button>
-                                <div class="col-md-10 conatiner" style="overflow-x: auto;">
+                                <div class="col-lg-10 conatiner" style="overflow-x: auto;">
                                     <div class="row alb flex-row flex-nowrap" id="album">
                                         <div class="col-3">
                                             <div class="card card-block text-center">
@@ -129,7 +129,7 @@
                     <div class="row">
                         <button id="slideLeft1" type="button" class="mx-3 desktop-only">
                             < </button>
-                                <div class="col-md-10 conatiner" style="overflow-x: auto;">
+                                <div class="col-lg-10 conatiner" style="overflow-x: auto;">
                                     <div class="row alb flex-row flex-nowrap" id="artist">
                                         <div class="col-3">
                                             <div class="card card-block text-center">
@@ -181,7 +181,7 @@
             <div class="col-lg-3 music mt-3 px-5">
                 <h3 class="mb-3">Songs</h3>
                 <div class="music-cont">
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card mb-3" style="max-width: 100%;">
                         <div class="row g-0">
                             <div class="col-4">
                                 <img src="/res/images/music/s1.jpg" class="img-fluid rounded-start" alt="...">
@@ -196,7 +196,7 @@
                         </div>
                     </div>
 
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card mb-3" style="max-width: 100%;">
                         <div class="row g-0">
                             <div class="col-4">
                                 <img src="/res/images/music/s2.jpg" class="img-fluid rounded-start" alt="...">
@@ -211,7 +211,7 @@
                         </div>
                     </div>
 
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card mb-3" style="max-width: 100%;">
                         <div class="row g-0">
                             <div class="col-4">
                                 <img src="/res/images/music/s3.jpg" class="img-fluid rounded-start" alt="...">
@@ -226,7 +226,7 @@
                         </div>
                     </div>
 
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card mb-3" style="max-width: 100%;">
                         <div class="row g-0">
                             <div class="col-4">
                                 <img src="/res/images/music/s4.jpg" class="img-fluid rounded-start" alt="...">
@@ -241,7 +241,7 @@
                         </div>
                     </div>
 
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card mb-3" style="max-width: 100%;">
                         <div class="row g-0">
                             <div class="col-4">
                                 <img src="/res/images/music/s5.jpg" class="img-fluid rounded-start" alt="...">
@@ -256,7 +256,7 @@
                         </div>
                     </div>
 
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card mb-3" style="max-width: 100%;">
                         <div class="row g-0">
                             <div class="col-4">
                                 <img src="/res/images/music/s6.jpg" class="img-fluid rounded-start" alt="...">
@@ -271,7 +271,7 @@
                         </div>
                     </div>
 
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card mb-3" style="max-width: 100%;">
                         <div class="row g-0">
                             <div class="col-4">
                                 <img src="/res/images/music/s7.jpg" class="img-fluid rounded-start" alt="...">
@@ -285,7 +285,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card mb-3" style="max-width: 100%;">
                         <div class="row g-0">
                             <div class="col-4">
                                 <img src="/res/images/music/s8.jpg" class="img-fluid rounded-start" alt="...">
@@ -299,7 +299,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card mb-3" style="max-width: 100%;">
                         <div class="row g-0">
                             <div class="col-4">
                                 <img src="/res/images/music/s9.jpg" class="img-fluid rounded-start" alt="...">
@@ -316,18 +316,21 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-9 player mt-5 py-3 text-light">
+        <div class="col-lg-9 player mt-5 py-3 text-light">
             <div class="row">
-                <div class="col-1"><i class="fas fa-random"></i></div>
-                <div class="col-3">Memories<span>
+                <div class="col-1 mt-auto mb-auto"><i class="fas fa-random"></i></div>
+                <div class="col-3 mt-auto mb-auto"><img src="/res/images/music/s9.jpg" style="height: 50%;" />
+                    Memories<span>
                         <span style="font-size: 0.75rem;">-Maroon 5</span>
                     </span></div>
-                <div class="col-1"><i class="fas fa-backward"></i></div>
-                <div class="col-1"><i id="play" onclick="myFunction()" class="fas fa-play"></i>
+                <div class="col-1 mt-auto mb-auto"><i class="fas fa-backward"></i></div>
+                <div class="col-1 mt-auto mb-auto"><i id="play" onclick="myFunction()" class="fas fa-play"></i>
                     <i id="pause" onclick="myFunction()" class="fas fa-pause-circle" style="display: none;"></i></div>
-                <div class="col-1"><i class="fas fa-forward"></i></div>
-                <div class="col-3"> <input type="range" min="1" max="100" value="20" class="slider" id="myRange"></div>
-                <div class="col-1"><i style="cursor: pointer; color: red;" id="like" class="fas fa-heart"></i></div>
+                <div class="col-1 mt-auto mb-auto"><i class="fas fa-forward"></i></div>
+                <div class="col-3 mt-auto mb-auto"> <input type="range" min="1" max="100" value="20" class="slider"
+                        id="myRange"></div>
+                <div class="col-1 mt-auto mb-auto"><i style="cursor: pointer; color: red;" id="like"
+                        class="fas fa-heart"></i></div>
             </div>
         </div>
     </div>
@@ -411,17 +414,17 @@
     const buttonLeft1 = document.getElementById('slideLeft1');
 
     buttonRight.onclick = function () {
-        document.getElementById('album').scrollLeft += 300;
+        document.getElementById('album').scrollLeft += 400;
     };
     buttonLeft.onclick = function () {
-        document.getElementById('album').scrollLeft -= 300;
+        document.getElementById('album').scrollLeft -= 400;
     };
 
     buttonRight1.onclick = function () {
-        document.getElementById('artist').scrollLeft += 300;
+        document.getElementById('artist').scrollLeft += 400;
     };
     buttonLeft1.onclick = function () {
-        document.getElementById('artist').scrollLeft -= 300;
+        document.getElementById('artist').scrollLeft -= 400;
     };
 </script>
 
