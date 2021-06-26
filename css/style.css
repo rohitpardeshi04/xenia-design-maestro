@@ -16,6 +16,11 @@ body {
   font-size: 1.2rem;
 }
 
+.navbar-brand img {
+  height: 50px;
+  border-radius: 10px;
+}
+
 .bg-dark,
 .navbar-dark {
   background-color: #000 !important;
@@ -146,6 +151,12 @@ footer i {
   width: 100%;
   position: relative;
   border: 2px solid red;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.album-thumb:hover {
+  transform: scale(1.1);
 }
 
 .artist-thumb {
@@ -176,7 +187,7 @@ footer i {
 }
 
 .music-cont {
-  height: 85vh;
+  height: 75vh;
   overflow-y: scroll;
 }
 
@@ -271,10 +282,20 @@ footer i {
 .mobile-only {
   display: none;
 }
-/* 
-.desktop-only {
-  display: block;
-} */
+
+.genres .card-title {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.genres .card {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.genres .card:hover {
+  transform: scale(1.1);
+}
 
 /* games */
 
@@ -323,6 +344,10 @@ footer i {
   margin-top: 15px;
 }
 
+#myVid-desc {
+  color: #fff;
+}
+
 .image-overlay {
   position: absolute;
   top: 0;
@@ -336,11 +361,11 @@ footer i {
   background: rgba(0, 0, 0, 0.8);
 }
 
-#cnt .card:hover .image-overlay {
+.card:hover .image-overlay {
   opacity: 1;
 }
 
-#cnt .card {
+.card {
   cursor: pointer;
 }
 
@@ -351,6 +376,10 @@ footer i {
 
   .mobile-only {
     display: block;
+  }
+
+  .navbar-brand img {
+    height: 35px;
   }
 
   .carousel {
