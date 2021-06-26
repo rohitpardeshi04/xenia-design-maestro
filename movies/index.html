@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -55,13 +56,13 @@
                     <h1>MOVIES</h1>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8" data-aos="fade-right" data-aos-duration="1000">
                 <video width="400" class="mov" id="myVid" controls>
                     <source src="/res/video/m1.mp4" type="video/mp4">
 
                 </video>
             </div>
-            <div class="col-md-4 mt-3">
+            <div class="col-md-4 mt-3" data-aos="fade-left" data-aos-duration="1000">
                 <div class="mov-title">
                     Black Hawk Down
                 </div>
@@ -91,7 +92,7 @@
         <div class="col-12 mt-5">
             <hr style=" border-top: 2px solid red;">
         </div>
-        <div class="albums mt-4">
+        <div class="albums mt-4" data-aos="fade-up" data-aos-duration="1000">
             <h3 class="mb-2">Similar Movies</h3>
             <div class="row desktop-only">
                 <button id="slideLeft" type="button" class="mx-3 desktop-only">
@@ -223,6 +224,10 @@
     </div>
 
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 <script>
     const buttonRight = document.getElementById('slideRight');

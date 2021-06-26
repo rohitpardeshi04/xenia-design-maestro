@@ -7,11 +7,12 @@
     <title>Music</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 </head>
 
@@ -68,7 +69,7 @@
         </div>
         <div class="row">
             <div class="col-lg-9">
-                <div class="albums mt-3">
+                <div class="albums mt-3" data-aos="fade-up" data-aos-duration="1000">
                     <h3 class="mb-3">Albums</h3>
                     <div class="row">
                         <button id="slideLeft" type="button" class="mx-3 desktop-only">
@@ -124,7 +125,7 @@
 
                 <!-- Artists  -->
 
-                <div class="albums mt-5">
+                <div class="albums mt-5" data-aos="fade-up" data-aos-duration="1000">
                     <h3 class="mb-3">Artists</h3>
                     <div class="row">
                         <button id="slideLeft1" type="button" class="mx-3 desktop-only">
@@ -178,7 +179,7 @@
                 </div>
 
             </div>
-            <div class="col-lg-3 music mt-3 px-5">
+            <div class="col-lg-3 music mt-3 px-5" data-aos="fade-left" data-aos-duration="1000">
                 <h3 class="mb-3">Songs</h3>
                 <div class="music-cont">
                     <div class="card mb-3" style="max-width: 100%;">
@@ -316,7 +317,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-9 player mt-5 py-3 text-light">
+        <div class="col-lg-9 player mt-5 py-3 text-light" data-aos="fade-up" data-aos-duration="1000">
             <div class="row">
                 <div class="col-1 mt-auto mb-auto"><i class="fas fa-random"></i></div>
                 <div class="col-3 mt-auto mb-auto"><img src="/res/images/music/s9.jpg" style="height: 50%;" />
@@ -376,7 +377,10 @@
         </div>
     </div>
 </body>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script>
     document.getElementById('like').addEventListener('click', function () {
         this.style.color = this.style.color === 'white' ? 'red' : 'white';

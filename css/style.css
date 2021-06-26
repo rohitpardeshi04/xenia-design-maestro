@@ -1,5 +1,6 @@
 body {
   background-color: #000;
+  overflow-x: hidden;
 }
 
 /* Navbar  */
@@ -179,6 +180,12 @@ footer i {
   overflow-y: scroll;
 }
 
+.music-cont .card {
+  background-color: #333333;
+  border-radius: 5px;
+  color: #fff;
+}
+
 .img-fluid {
   width: 100%;
 }
@@ -344,6 +351,10 @@ footer i {
 
   .mobile-only {
     display: block;
+  }
+
+  .carousel {
+    margin: 1rem;
   }
 
   .music-cont {
