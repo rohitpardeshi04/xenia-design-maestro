@@ -55,6 +55,76 @@ footer i {
   cursor: pointer;
 }
 
+/* .home-deck .card {
+  background-color: transparent;
+  background-image: url("/res/images/pent.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+} */
+
+.home-thumb {
+  width: 50%;
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid red;
+  margin-top: 3rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  background-image: url("/res/images/pent.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: transparent;
+  background-image: url("/res/images/pent.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card h1 {
+  font-weight: bolder;
+}
+
 /* Page  */
 .title h1 {
   color: red;
@@ -65,7 +135,8 @@ footer i {
 .cartoon-cont::-webkit-scrollbar {
   display: none !important;
 }
-.alb {
+.alb,
+#cnt {
   overflow: scroll;
   scroll-behavior: smooth;
 }
@@ -203,7 +274,7 @@ footer i {
 .game-img {
   border-radius: 50%;
   height: auto;
-  width: 60%;
+  width: 80%;
   margin-top: 1.5rem;
 }
 
@@ -239,6 +310,33 @@ footer i {
   border: 1px solid red;
 }
 
+#myVid-title {
+  font-size: 1.75rem;
+  color: red;
+  margin-top: 15px;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#cnt .card:hover .image-overlay {
+  opacity: 1;
+}
+
+#cnt .card {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 900px) {
   .desktop-only {
     display: none;
@@ -251,5 +349,46 @@ footer i {
   .music-cont {
     height: 50vh;
     overflow-y: scroll;
+  }
+  .home-thumb {
+    margin-top: 2rem;
+  }
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.floating1 {
+  animation-name: floating1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes floating1 {
+  from {
+    transform: translate(0, 15px);
+  }
+  65% {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(0, 15px);
   }
 }
