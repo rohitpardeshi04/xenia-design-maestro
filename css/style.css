@@ -306,6 +306,11 @@ footer i {
   margin-top: 1.5rem;
 }
 
+.game-vid {
+  margin-top: 3.5%;
+  width: 80%;
+}
+
 .games .card-title {
   font-weight: bolder;
   font-size: 1.75rem;
